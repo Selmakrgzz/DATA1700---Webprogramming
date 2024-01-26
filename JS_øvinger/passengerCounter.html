@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Passenger Counter</title>
+</head>
+<body>
+<h1>People entered</h1>
+<h2 id="count-el">0</h2>
+<button id="increment-brn" onclick="increment()">INCREMENT</button>
+<button id="save-btn" onclick="save()">SAVE</button>
+<h2 id="save-el">0</h2>
+
+    <script>
+        let countEl = document.getElementById("count-el");
+        let saveEl = document.getElementById("save-el");
+        let count = 0;
+
+        function increment(){
+            count++;
+            countEl.innerText = count;
+        }
+
+        saveEl.innerText = "People entered: "
+
+        function save() {
+            saveEl.innerText += count + " -";
+            countEl.innerText = 0;
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>

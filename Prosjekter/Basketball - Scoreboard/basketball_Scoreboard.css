@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 575px;
+    height: 385px;
+    padding: 30px;
+    background-color: #1B244A;
+}
+
+h3{
+    color: #EEEEEE;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+}
+
+.column{
+    width: 155px;
+}
+
+.pointEl{
+    height: 190px;
+    width: inherit;
+    display: flex;
+}
+
+.black-box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: inherit;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #080001;
+}
+
+.black-box > p {
+    font-family: 'Cursed Timer ULiL';
+    margin-bottom: 80px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    color: #F94F6D;
+    text-align: center;
+}
+
+.pointAdd{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-end;
+    width: inherit;
+}
+
+.pointAdd > button{
+    align-items: center;
+    font-family: 'Cursed Timer ULiL';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #9AABD8;
+    background: none;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #9AABD8;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+/*.point{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #9AABD8;
+    width: 45px;
+    height: 45px;
+}
+
+.point > p{
+    font-family: 'Cursed Timer ULiL';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #9AABD8;
+    margin-bottom: 10px;
+}*/
+

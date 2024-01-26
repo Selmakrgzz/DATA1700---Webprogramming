@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kino</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">  <script src="index.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+
+      <h1>Bestilling av kinobiletter</h1>
+
+      <form class="form">
+        <div class="form-group">
+          <label for="film">Velg film: </label>
+          <select id="film" class="form-control">
+            <option>Velg film her</option>
+            <option>Jaws 1</option>
+            <option>Creed 1</option>
+            <option>Freedom writers</option>
+            <option>Rocky 1</option>
+          </select>
+          <label id="errorFilm" style = "color: red;"></label>
+        </div>
+
+        <div class="form-group">
+          <label for="antall">Antall</label>
+          <input type="text" class="form-control"  id="antall">
+          <label id="errorAntall" style = "color: red;"></label>
+        </div>
+
+        <div class="form-group">
+          <label for="fornavn">Fornavn</label>
+          <input type="text" class="form-control" id="fornavn">
+          <label id="errorFornavn" style = "color: red;"></label>
+        </div>
+
+        <div class="form-group">
+          <label for="etternavn">Etternavn</label>
+          <input type="text" class="form-control" id="etternavn">
+          <label id="errorEtternavn" style = "color: red;"></label>
+        </div>
+
+        <div class="form-group">
+          <label for="telefonnr">Telefonnr</label>
+          <input type="text" class="form-control" id="telefonnr">
+          <label id="errorTelefonnr" style = "color: red;"></label>
+        </div>
+
+        <div class="form-group">
+          <label for="epost">Epost</label>
+          <input type="text" class="form-control" id="epost">
+          <label id="errorEpost" style = "color: red;"></label>
+        </div>
+      </form>
+
+      <button class="btn btn-primary" id="setBestilling">Kjøp bilett</button><br><br>
+    </div>
+    <div class="col-md-8">
+      <h2>Alle biletter</h2>
+      <span id="output"></span><br><br>
+
+      <button class="btn btn-danger" id="deleteAll">Slett alle bilettene</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>

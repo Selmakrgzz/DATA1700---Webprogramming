@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="palindrome">
+    <button onclick="getReverse()">Click</button>
+    
+<script>
+
+    function getReverse(palindrome){ 
+        
+        let a = 0, b = 0, c = 0;
+
+        while(palindrome > 0){
+            a = parseInt(palindrome % 10);
+            palindrome = parseInt(palindrome / 10);
+            c = parseInt(c*10 +a);
+        }
+        return c;
+    }
+
+    function returnResult(){
+        let input = document.getElementById("palindrome").value;
+        if (getReverse(input) == input){
+            console.log(input+ " is a palindrome");
+        } else{
+            console.log(input+ "is not a palindorme");
+        }
+    }
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kino</title>
+    <script src="index.js"></script>
+</head>
+<body>
+      <h1>Bestilling av kinobiletter</h1>
+
+      <table>
+        <tr>
+          <form>
+            <td><label for="film">Velg film: </label></td>
+            <td><select id="film" >
+              <option>Velg film her</option>
+              <option>Jaws 1</option>
+              <option>Creed 1</option>
+              <option>Freedom writers</option>
+              <option>Rocky 1</option>
+            </select></td>
+            <td><label id="errorFilm" style = "color: red;"></label></td>
+          </form>
+        </tr>
+
+        <tr>
+          <form>
+            <td><label for="antall">Antall</label></td>
+            <td><input type="text" id="antall"></td>
+            <td><label id="errorAntall" style = "color: red;"></label></td>
+          </form>
+        </tr>
+
+        <tr>
+          <form>
+            <td><label for="fornavn">Fornavn</label></td>
+            <td><input type="text" id="fornavn"></td>
+            <td><label id="errorFornavn" style = "color: red;"></label></td>
+          </form>
+        </tr>
+
+        <tr>
+          <form>
+            <td><label for="etternavn">Etternavn</label></td>
+            <td><input type="text" id="etternavn"></td>
+            <td><label id="errorEtternavn" style = "color: red;"></label></td>
+          </form>
+        </tr>
+
+        <tr>
+          <form>
+            <td><label for="telefonnr">Telefonnr</label></td>
+            <td><input type="text" id="telefonnr"></td>
+            <td><label id="errorTelefonnr" style = "color: red;"></label></td>
+          </form>
+        </tr>
+
+        <tr>
+          <form>
+            <td><label for="epost">Epost</label></td>
+            <td><input type="text" id="epost"></td>
+            <td><label id="errorEpost" style = "color: red;"></label></td>
+          </form>
+        </tr>
+      </table><br>
+
+      <button onclick="addFilm()">Kjøp bilett</button>
+
+      <h2>Alle biletter</h2>
+      <span id="output"></span><br><br>
+
+      <button onclick="deleteAll()">Slett alle bilettene</button>
+</body>
+</html>
